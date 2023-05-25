@@ -12,7 +12,7 @@ const errorController = require('./controllers/error');
 const User = require('./models/user');
 
 const MONGODB_URI =
-  'mongodb+srv://frenchyouth:frenchyouth123@cluster0.nppttgx.mongodb.net/shoppingApp';
+  'mongdb link here';
 
 const app = express();
 const store = new MongoDBStore({
@@ -73,20 +73,3 @@ mongoose
   .catch(err => {
     console.log(err);
   });
-//
-// const connectUrl = 'mongodb+srv://frenchyouth:frenchyouth123@cluster0.nppttgx.mongodb.net/ShoppingApp';
- 
-// const connectConfig = { 
-//   useNewUrlParser: true, 
-//   useUnifiedTopology: true, 
-//   useCreateIndex: true 
-// }
- 
-// mongoose.connect(connectUrl, connectConfig)
-//   .then(() => {
-//     console.log('+++ Database connected! +++');
-//     app.listen(5000);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
